@@ -1,5 +1,9 @@
 @import url("vars.css");
 
+button, a{
+    cursor: pointer;
+}
+
 .main-container{
     max-width:80vw;
     height: 100vh;
