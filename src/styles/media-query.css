@@ -1,0 +1,29 @@
+@media screen and (max-width: 1015px){
+    .offer__list-item,   .grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .header__search input{
+        padding: 0 10px 0 12px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .offer__list-item, .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .sidebar, .header__navigation .header__arrows, .header__navigation .header__login{
+        display:none;
+    }
+
+    .header__navigation .header__search{
+        min-width: 100%;
+        margin:auto;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    .main-container{
+        all:unset;
+    }
+}
