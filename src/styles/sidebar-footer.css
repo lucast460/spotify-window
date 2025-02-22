@@ -17,6 +17,7 @@ body{
     padding: 12px;
     width: 300px;
     background-color: var(--off-black-two);
+    z-index: 300;;
 }
 
 .sidebar__navigation{
@@ -189,12 +190,4 @@ footer .premium{
     font-weight: 700;
     height: 40px;
     margin-top: 5px;
-}
-
-
-
-@media(hover:hover){
-    .sidebar .cookies a:hover{
-        text-decoration: underline;
-    }
 }

@@ -1,9 +1,5 @@
 @import url("vars.css");
 
-button, a{
-    cursor: pointer;
-}
-
 .main-container{
     max-width:80vw;
     height: 100vh;
@@ -102,7 +98,7 @@ button, a{
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
-    background-color: #fff;
+    background-color: var(--off-white);
 }
 
 @media(hover:hover){
@@ -110,7 +106,6 @@ button, a{
         text-decoration: underline;
     }
 }
-
 
 /* PLAYLIST */
 .playlist-container {
@@ -139,7 +134,6 @@ button, a{
     font-weight: 700;
   }
   
-  /* SCROLL */
   .offer__scroll-container {
     max-height: 52vh;
     margin: 24px;
@@ -153,31 +147,17 @@ button, a{
   .offer__scroll-container::-webkit-scrollbar-thumb {
     background-color: transparent;
   }
-  /* FIM SCROLL */
   
   .offer__list-item {
-    /* display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 16px;
-    gap: 16px;
-    margin-bottom: 16px; */
-  
-    /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
-    display: grid;  /* define o modelo de layout do elemento como uma grade */
+    display: grid;
     gap: 16px;
     margin: 0 auto;
     grid-template-columns: auto auto auto auto;
 
   }
   
-  /* POSITION */
-  /* principais são static, relative, absolute, fixed, e sticky. */
-  
   .cards {
-    position: relative; /* relative:
-                            Comportamento em relação a si mesmo: O elemento é posicionado em relação à sua posição original.
-                            Mantém espaço original: O espaço original que o elemento ocuparia não é alterado, mas você pode movê-lo com top, right, bottom ou left. */
+    position: relative;
     height: 200px;
     overflow: hidden;
     border-radius: 8px;
@@ -186,15 +166,11 @@ button, a{
   .cards span {
     padding: 16px;
     position: absolute;
-    /* absolute:
-                            Comportamento em relação ao ancestral posicionado mais próximo ou ao elemento raiz (se nenhum ancestral estiver posicionado).
-                            Remove do fluxo normal: O elemento é removido do fluxo normal do documento, o que significa que outros elementos agem como se o elemento não estivesse presente. */
     color: var(--text-base-light);
     font-size: 24px;
     font-weight: 700;
   }
-  
-  /* COLOR CARDS */
+
   .card1 {
     background-color: rgb(0, 100, 80);
   }
@@ -240,7 +216,6 @@ button, a{
   .card15 {
     background: rgb(60, 30, 80);
   }
-  /* FIM COLOR CARDS */
   
   .offer__list-item img {
     position: absolute;
@@ -250,8 +225,6 @@ button, a{
     width: 107px;
     transform: rotate(25deg) translate(18%, -2%);
   }
-  
-  /* CARD ARTISTA */
   
   .artist {
     --column-count: 5;
@@ -360,4 +333,3 @@ button, a{
   #result-artist {
     padding: 20px 40px;
   }
-  /* FIM CARD ARTISTA */
